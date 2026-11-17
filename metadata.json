@@ -1,0 +1,8 @@
+{
+  "name": "HAMILTON EMPIRE",
+  "description": "Luxury Nigerian streetwear and 3D runway fashion house featuring interactive looks, footwear, and heavyweight apparel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

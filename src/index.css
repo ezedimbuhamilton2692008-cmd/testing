@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: light;
+    --bg-canvas: #f6f1e7;
+    --bg-surface: #faf7f0;
+    --bg-stone: #efe9dc;
+    --ink-primary: #161412;
+    --ink-muted: #625a4e;
+    --border-hairline: #d8cebc;
+    --accent-royal: #8f7035;
+    --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-canvas);
+    color: var(--ink-primary);
+    font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100%;
+    overflow-x: hidden;
+    background-color: var(--bg-canvas);
+    color: var(--ink-primary);
+  }
+
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  select:focus-visible {
+    outline: 2px solid #8f7035;
+    outline-offset: 2px;
+  }
+}
+
+.font-display {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+.font-mono-tabular {
+  font-family: "JetBrains Mono", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.royal-runway-bg {
+  background: radial-gradient(
+    ellipse 85% 70% at 50% 38%,
+    #fffdf8 0%,
+    #f5efe2 56%,
+    #e9dfc9 100%
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
